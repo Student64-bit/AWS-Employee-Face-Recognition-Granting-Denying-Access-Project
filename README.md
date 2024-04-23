@@ -28,7 +28,9 @@ I faced some issues when deploying the registration lambda function for the auth
 
 ## 6.) Creating a REST API via API Gatewa
 A REST API is set up to act as an interface for another Lambda function responsible for authenticating user images. Requests from the frontend application are forwarded to the authentication Lambda function through the REST API.
-
+<img src="https://i.imgur.com/i5OdNpe.png" height="80%" width="80%" alt="Code commit permissions"/>
+<br />
+<br />
 
 ## 7.) React Frontend Application
 The frontend was created using react with the purpose of giving users a UI to upload visitor images for authentication. This application was a key component in this project as it connected different Aws services like my lambda authentication function and Api Gateway.
