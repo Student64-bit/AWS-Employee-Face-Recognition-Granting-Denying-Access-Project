@@ -22,7 +22,9 @@ After conducting research, I discovered that the AWS CLI is the primary method f
 
 ## 5.) CloudWatchLogs for Debugging
 I faced some issues when deploying the registration lambda function for the authentication, but after utilizing the error catches and debugging logs in his code, I was able to troubleshoot my issue after a couple of hours. CloudWatch was extremely helpful as the issues were logged and eventually after researching the code I realized I made a mistake in the faceId function call. I was then able to successfully upload Dwayne Johnson and John Cena as my first employees registered. 
-
+<img src="https://i.imgur.com/d75KzQm.png" height="80%" width="80%" alt="Code commit permissions"/>
+<br />
+<br />
 
 ## 6.) Creating a REST API via API Gatewa
 A REST API is set up to act as an interface for another Lambda function responsible for authenticating user images. Requests from the frontend application are forwarded to the authentication Lambda function through the REST API.
