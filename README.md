@@ -34,7 +34,9 @@ A REST API is set up to act as an interface for another Lambda function responsi
 
 ## 7.) React Frontend Application
 The frontend was created using react with the purpose of giving users a UI to upload visitor images for authentication. This application was a key component in this project as it connected different Aws services like my lambda authentication function and Api Gateway.
-
+<img src="https://i.imgur.com/EHUOq0a.png" height="80%" width="80%" alt="Code commit permissions"/>
+<br />
+<br />
 
 ## 8.) Lambda Authentication Function
 Another Lambda function is created to trigger when a user uploads a photo to the website application. This function retrieves visitor photos from the S3 bucket, utilizes Rekognition for face detection and comparison, and references DynamoDB to confirm if the employee is registered.
