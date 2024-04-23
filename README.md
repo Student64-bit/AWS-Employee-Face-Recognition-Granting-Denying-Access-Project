@@ -4,6 +4,9 @@ This project utilizes various AWS services to implement a facial recognition sys
 
 ## 1.) Setting up S3 Buckets:
 As a foundational step in my project, two Amazon S3 (Simple Storage Service) buckets were created. These buckets serve different purposes within the application's architecture. The first bucket, named ‘david-employee-photos’, is designated for the storage of employee photos. This bucket acts as a repository for images uploaded by employees, which are later processed and indexed for facial recognition. The second bucket, named ‘david-ilori-visitor-photos’, is intended for storing photos submitted by visitors to the workplace. Although the second bucket is not technically needed, it serves to provide clarity and some organization within this application architecture.
+<img src="https://i.imgur.com/y1RdmJ5.png" height="80%" width="80%" alt="Code commit permissions"/>
+<br />
+<br />
 
 
 ## 2.)  IAM Role Configuration
