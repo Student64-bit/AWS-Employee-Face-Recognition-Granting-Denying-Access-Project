@@ -40,7 +40,9 @@ The frontend was created using react with the purpose of giving users a UI to up
 
 ## 8.) Lambda Authentication Function
 Another Lambda function is created to trigger when a user uploads a photo to the website application. This function retrieves visitor photos from the S3 bucket, utilizes Rekognition for face detection and comparison, and references DynamoDB to confirm if the employee is registered.
-
+<img src="https://i.imgur.com/NSxaJyX.png" height="80%" width="80%" alt="Code commit permissions"/>
+<br />
+<br />
 
 ## 9.) Some notes
 Overall, working on this project was an enjoyable experience, although a significant portion of the time was devoted to debugging and testing various components. Tools such as CloudWatch, console logs, and ChatGPT proved to be invaluable resources in diagnosing issues and ensuring the smooth functioning of the project.
