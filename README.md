@@ -4,9 +4,6 @@ This project utilizes various AWS services to implement a facial recognition sys
 
 ## 1.) Setting up S3 Buckets:
 As a foundational step in my project, two Amazon S3 (Simple Storage Service) buckets were created. These buckets serve different purposes within the application's architecture. The first bucket, named ‘david-employee-photos’, is designated for the storage of employee photos. This bucket acts as a repository for images uploaded by employees, which are later processed and indexed for facial recognition. The second bucket, named ‘david-ilori-visitor-photos’, is intended for storing photos submitted by visitors to the workplace. Although the second bucket is not technically needed, it serves to provide clarity and some organization within this application architecture.
-<img src="https://i.imgur.com/y1RdmJ5.png" height="80%" width="80%" alt="Code commit permissions"/>
-<br />
-<br />
 
 
 ## 2.)  IAM Role Configuration
@@ -15,7 +12,9 @@ IAM (Identity and Access Management) roles were critical to my project to provid
 
 ## 3.) Lambda Registration Function and DynamoDB Table
 The initial Lambda function was designed to index employee data within DynamoDB. Whenever an employee uploaded an image file to the 'david-employee-photos' S3 bucket, the Lambda function executed, extracting and storing essential employee information, including first and last names, alongside a unique identifier, into the DynamoDB table. 
-
+<img src="https://i.imgur.com/y1RdmJ5.png" height="80%" width="80%" alt="Code commit permissions"/>
+<br />
+<br />
 
 ## 4.) AWS CLI Configuration for Rekognition
 After conducting research, I discovered that the AWS CLI is the primary method for interacting with Rekognition. Since I already had an AWS CLI configuration set up using secret and access keys for my IAM non-root account, configuring this setup was relatively straightforward. Upon executing the 'aws rekognition create-collection --collection-id employees --region us-east-1' command in the AWS CLI, the collection aspect of Felix’s Lambda code was prepared to commence indexing S3 photos submitted by employees. This indexed data would then be stored in DynamoDB for future reference.
