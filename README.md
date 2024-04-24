@@ -2,6 +2,15 @@
 ## Overview
 This project utilizes various AWS services to implement a facial recognition system for employee authentication. It involves the setup of S3 buckets for storing employee and visitor photos, creation of Lambda functions for registration and authentication, configuration of IAM roles for security, utilization of AWS Rekognition for facial detection and comparison, setting up a REST API via API Gateway, and developing a React frontend application for user interaction.
 
+##AWS Services Used
+-**IAM: IAM roles:* are configured to provide programmatic access to Lambda functions for interacting with other AWS services.
+-**AWS Rekognition:* Utilized for facial detection and comparison.
+-**CloudWatchLogs:* Used for logging and debugging Lambda functions.
+-**AWS CLI:* Interacts with Rekognition for setup and configuration.
+-**DynamoDB:* Stores employee data for reference during authentication.
+-**API* Gateway: Provides a RESTful interface for communication between the frontend application and backend Lambda functions.
+-**Lambda Functions:* Handles image registration and authentication tasks.
+
 ## 1.) Setting up S3 Buckets:
 As a foundational step in my project, two Amazon S3 (Simple Storage Service) buckets were created. These buckets serve different purposes within the application's architecture. The first bucket, named ‘david-employee-photos’, is designated for the storage of employee photos. This bucket acts as a repository for images uploaded by employees, which are later processed and indexed for facial recognition. The second bucket, named ‘david-ilori-visitor-photos’, is intended for storing photos submitted by visitors to the workplace. Although the second bucket is not technically needed, it serves to provide clarity and some organization within this application architecture.
 
